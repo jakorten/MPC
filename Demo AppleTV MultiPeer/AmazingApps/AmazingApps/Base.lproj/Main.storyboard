@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hdP-2O-cZ4">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="dark"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="R0c-B8-lDk">
+            <objects>
+                <viewController storyboardIdentifier="slideView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hdP-2O-cZ4" customClass="MainViewController" customModule="AmazingApps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZoY-8i-nLC"/>
+                        <viewControllerLayoutGuide type="bottom" id="VYz-RN-hxl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QVT-14-MAq">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="VfI-Zd-woh">
+                                <rect key="frame" x="647" y="0.0" width="1273" height="1080"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1200" id="MA9-9e-O8Q"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PE7-FD-fVJ">
+                                <rect key="frame" x="0.0" y="0.0" width="647" height="1080"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Fabulous App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PMJ-SU-nYy">
+                                        <rect key="frame" x="31" y="68" width="577" height="132"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="132" id="eph-qt-hDa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbg-kj-R6M">
+                                        <rect key="frame" x="31" y="208" width="577" height="450"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="450" id="3Cg-Do-xgE"/>
+                                        </constraints>
+                                        <string key="text">This amazing app allows students to present their magnificent work using
+an Apple TV. It also allows others to rate their app :)</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mp5-aI-s8v">
+                                        <rect key="frame" x="31" y="666" width="577" height="283"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="283" id="sTK-v6-ZwW"/>
+                                        </constraints>
+                                        <string key="text">Bart van der Wal
+Jille Treffers
+Robert Holwerda
+Lars Tijsma
+Johan Korten</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other think your app is: ★★★★☆" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dAg-q7-nof">
+                                        <rect key="frame" x="31" y="957" width="577" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="30k-iX-caG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dAg-q7-nof" firstAttribute="top" secondItem="mp5-aI-s8v" secondAttribute="bottom" constant="8" symbolic="YES" id="2CH-xf-Lis"/>
+                                    <constraint firstItem="mbg-kj-R6M" firstAttribute="trailing" secondItem="mp5-aI-s8v" secondAttribute="trailing" id="32R-N8-8RS"/>
+                                    <constraint firstItem="mbg-kj-R6M" firstAttribute="top" secondItem="PMJ-SU-nYy" secondAttribute="bottom" constant="8" symbolic="YES" id="45F-GB-HXI"/>
+                                    <constraint firstItem="PMJ-SU-nYy" firstAttribute="trailing" secondItem="mbg-kj-R6M" secondAttribute="trailing" id="4ZF-CK-Idv"/>
+                                    <constraint firstItem="mp5-aI-s8v" firstAttribute="top" secondItem="mbg-kj-R6M" secondAttribute="bottom" constant="8" symbolic="YES" id="9Xh-LE-IpQ"/>
+                                    <constraint firstAttribute="width" secondItem="PE7-FD-fVJ" secondAttribute="height" multiplier="647:1080" id="D5N-Gk-yzs"/>
+                                    <constraint firstItem="PMJ-SU-nYy" firstAttribute="leading" secondItem="PE7-FD-fVJ" secondAttribute="leading" constant="31" id="DYV-Ys-g4G"/>
+                                    <constraint firstItem="mbg-kj-R6M" firstAttribute="leading" secondItem="mp5-aI-s8v" secondAttribute="leading" id="DcK-EX-s5d"/>
+                                    <constraint firstItem="mp5-aI-s8v" firstAttribute="leading" secondItem="dAg-q7-nof" secondAttribute="leading" id="USk-8e-JHC"/>
+                                    <constraint firstItem="PMJ-SU-nYy" firstAttribute="top" secondItem="PE7-FD-fVJ" secondAttribute="topMargin" priority="750" id="VaG-6L-fjr"/>
+                                    <constraint firstItem="mp5-aI-s8v" firstAttribute="trailing" secondItem="dAg-q7-nof" secondAttribute="trailing" id="kWK-v1-Ba9"/>
+                                    <constraint firstItem="PMJ-SU-nYy" firstAttribute="leading" secondItem="mbg-kj-R6M" secondAttribute="leading" id="nXn-dI-ULl"/>
+                                    <constraint firstAttribute="trailing" secondItem="PMJ-SU-nYy" secondAttribute="trailing" priority="750" constant="39" id="o4s-00-Aei"/>
+                                    <constraint firstAttribute="bottom" secondItem="dAg-q7-nof" secondAttribute="bottom" constant="67" id="tV9-fK-tKa"/>
+                                    <constraint firstItem="PMJ-SU-nYy" firstAttribute="centerX" secondItem="PE7-FD-fVJ" secondAttribute="centerX" constant="-4" id="zYa-25-usm"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PE7-FD-fVJ" secondAttribute="bottom" id="59F-o1-cKr"/>
+                            <constraint firstAttribute="trailing" secondItem="VfI-Zd-woh" secondAttribute="trailing" id="7N4-sk-nIk"/>
+                            <constraint firstItem="PE7-FD-fVJ" firstAttribute="top" secondItem="VfI-Zd-woh" secondAttribute="top" id="9Nb-s0-7Zt"/>
+                            <constraint firstItem="PE7-FD-fVJ" firstAttribute="bottom" secondItem="VfI-Zd-woh" secondAttribute="bottom" id="MEU-Dv-EOm"/>
+                            <constraint firstItem="PE7-FD-fVJ" firstAttribute="top" secondItem="QVT-14-MAq" secondAttribute="top" id="k66-nk-eNI"/>
+                            <constraint firstItem="VfI-Zd-woh" firstAttribute="leading" secondItem="PE7-FD-fVJ" secondAttribute="trailing" id="sd6-o5-poc"/>
+                            <constraint firstItem="PE7-FD-fVJ" firstAttribute="leading" secondItem="QVT-14-MAq" secondAttribute="leading" id="vDi-rJ-eMA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Sl-QA-75J"/>
+                    </view>
+                    <connections>
+                        <outlet property="appDescriptionLabel" destination="mbg-kj-R6M" id="Ct8-8U-Bjg"/>
+                        <outlet property="appDevelopersLabel" destination="mp5-aI-s8v" id="PiF-l9-APv"/>
+                        <outlet property="appImageView" destination="VfI-Zd-woh" id="bum-J6-Bbk"/>
+                        <outlet property="appRatingLabel" destination="dAg-q7-nof" id="u0I-zx-hNb"/>
+                        <outlet property="appTitleLabel" destination="PMJ-SU-nYy" id="mCd-Gi-ydm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMh-9S-Y9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="2021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="1500" height="1000"/>
+    </resources>
+</document>
